@@ -9,7 +9,7 @@ import { useCustom } from "../Components/CustomsHook";
 export const UsersPage = () => {
   const { data, loading, error } = useCustom(API, "Error getting users");
   const [currentPage, setCurrentPage] = useState(1);
-  const [usersPerPage] = useState(6);
+  const [usersPerPage] = useState(10);
   const indexOfLastUser = currentPage * usersPerPage; 
   const indexOfFirstUser = indexOfLastUser - usersPerPage; 
   const currentUser = data.slice(indexOfFirstUser, indexOfLastUser); 

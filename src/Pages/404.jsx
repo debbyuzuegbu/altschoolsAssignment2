@@ -1,14 +1,15 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./pages.css"
 
 
 function Error() {
   return (
-    <div>
-        <img style={{width: 10, height: 5}} src="https://demo.activeitzone.com/ecommerce/public/assets/img/404.svg"/>
+    <div className="errorpage">
+        <img style={{width: "20em", height:"15em"}} src="https://demo.activeitzone.com/ecommerce/public/assets/img/404.svg"/>
         <h2>Page Not Found!</h2>
         <p>Oops! The page you are looking for has not been found on our server.</p>
-        <Link to="/">BACK TO HOME </Link>
+        <NavLink style={{textDecoration: "none", backgroundColor:"#006b6c", color:"#dafff6", borderRadius:"5px", fontFamily:"sans-serif", padding:"0.3em"}} to="/">BACK TO HOME </NavLink>
     </div>
   )
 }

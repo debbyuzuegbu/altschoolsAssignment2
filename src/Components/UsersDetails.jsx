@@ -39,7 +39,7 @@ const UsersDetails = ({ data, isLoading }) => {
               <img
                 src={user.picture.medium}
                 style={{ minWidth: "200px", borderRadius: "5px" }}
-                alt=""
+                alt="people's image"
               />
             </span>
           </div>
