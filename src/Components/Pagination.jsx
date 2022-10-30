@@ -1,8 +1,8 @@
 import { Button } from "./Button";
 
-export const Pagination = ({ data, totalUsers, usersPerPage, paginated }) => {
+export const Pagination = ({ data, totalUsers, usersPerPage, paginated, }) => {
   const pageNumber = [];
-  for (let i = 1; i <= Math.floor(totalUsers / usersPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalUsers / usersPerPage); i++) {
     pageNumber.push(i);
   }
 

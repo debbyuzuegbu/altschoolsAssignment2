@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import Error from './Pages/404';
 import Header from './Components/Header';
 import AboutUs from './Pages/AboutUs';
+import PolicyPage from './Pages/PolicyPage';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="user" element={<UsersPage />}></Route>
-        <Route path="aboutus" element={<AboutUs />}></Route>
+        <Route path="aboutus" element={<AboutUs />} />
+        <Route path="aboutus/policy" element={<PolicyPage/>} />
         <Route path="*" element={<Error />}></Route>
       </Routes>
     </main>
